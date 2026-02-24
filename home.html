@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethica | Compliance e Gestão Pública - Dr. Eduardo Jansen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#112A46',
+                        cream: '#F5F2E9',
+                        accent: '#8B7355',
+                        'navy-light': '#1e3a5f',
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Lato', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-gradient {
+            background: linear-gradient(rgba(17, 42, 70, 0.9), rgba(17, 42, 70, 0.7)), url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body class="bg-cream text-slate-800 font-sans">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-navy/10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="bg-navy p-2 rounded">
+                    <i class="fa-solid fa-shield-halved text-cream text-2xl"></i>
+                </div>
+                <span class="text-2xl font-serif font-bold text-navy tracking-tight">ETHICA</span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 items-center text-sm font-bold uppercase tracking-wide">
+                <a href="#sobre" class="text-navy hover:text-accent transition-colors">O Curso</a>
+                <a href="#mentor" class="text-navy hover:text-accent transition-colors">Mentor</a>
+                <a href="#ementa" class="text-navy hover:text-accent transition-colors">Ementa</a>
+                <a href="#ead" class="text-navy hover:text-accent transition-colors">Metodologia EAD</a>
+                <a href="#contato" class="bg-navy text-cream px-5 py-2 rounded hover:bg-accent transition-all">Matricule-se</a>
+            </nav>
+            
+            <button class="md:hidden text-navy">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-[85vh] flex items-center text-cream relative">
+        <div class="container mx-auto px-6 py-20">
+            <div class="max-w-3xl">
+                <div class="inline-block px-3 py-1 bg-accent/20 border border-accent/30 text-accent font-bold text-xs uppercase tracking-widest mb-6 rounded">
+                    Especialização de Alto Nível
+                </div>
+                <h1 class="text-4xl md:text-6xl font-serif font-bold mb-6 leading-tight text-shadow">
+                    Liderança com Integridade: O Futuro da Gestão Pública
+                </h1>
+                <p class="text-lg md:text-xl mb-10 opacity-90 leading-relaxed font-light">
+                    Domine os mecanismos de Compliance e Governança com o <strong>Dr. Eduardo Jansen</strong>. Um curso EAD desenhado para transformar a ética em ferramenta de eficiência administrativa.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contato" class="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-md font-bold text-center transition-all shadow-lg transform hover:-translate-y-1">
+                        INICIAR MINHA FORMAÇÃO
+                    </a>
+                    <a href="#sobre" class="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-md font-bold text-center transition-all">
+                        CONHECER O MÉTODO
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Social Proof Stats -->
+        <div class="absolute bottom-0 left-0 right-0 bg-navy/80 border-t border-white/10 py-6 hidden lg:block">
+            <div class="container mx-auto px-6 flex justify-around">
+                <div class="text-center">
+                    <span class="block text-2xl font-bold">+1.200</span>
+                    <span class="text-xs uppercase opacity-70">Gestores Formados</span>
+                </div>
+                <div class="text-center">
+                    <span class="block text-2xl font-bold">100%</span>
+                    <span class="text-xs uppercase opacity-70">Online & Flexível</span>
+                </div>
+                <div class="text-center">
+                    <span class="block text-2xl font-bold">Nota 4.9/5</span>
+                    <span class="text-xs uppercase opacity-70">Avaliação do Curso</span>
+                </div>
+                <div class="text-center">
+                    <span class="block text-2xl font-bold">Certificado</span>
+                    <span class="text-xs uppercase opacity-70">Reconhecido Nacionalmente</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O Problema / Introdução -->
+    <section id="sobre" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2">
+                    <h2 class="text-accent font-bold uppercase tracking-widest text-sm mb-4">Integridade e Segurança</h2>
+                    <h3 class="text-3xl md:text-4xl font-serif font-bold text-navy mb-6">Por que o Compliance é vital para a Gestão Pública atual?</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Em um cenário de fiscalização rigorosa, novas leis de licitações e exigência extrema por transparência, o gestor público não pode mais atuar sem uma base sólida de conformidade.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        O curso da <strong>Ethica</strong> traduz a complexidade jurídica em roteiros práticos. Não ensinamos apenas leis; ensinamos como proteger a sua gestão e garantir a entrega de valor real à sociedade.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-check text-accent"></i>
+                            <span class="font-bold text-navy">Segurança Jurídica</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-check text-accent"></i>
+                            <span class="font-bold text-navy">Eficiência Operacional</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-check text-accent"></i>
+                            <span class="font-bold text-navy">Prevenção de Riscos</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-check text-accent"></i>
+                            <span class="font-bold text-navy">Governança Transparente</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <div class="bg-navy rounded-2xl overflow-hidden shadow-2xl rotate-3 transform hover:rotate-0 transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=2070" alt="Jurídico e Governança" class="opacity-80">
+                    </div>
+                    <!-- Overlay Card -->
+                    <div class="absolute -bottom-10 -left-10 bg-white p-6 shadow-xl rounded-lg border-l-4 border-accent max-w-xs hidden sm:block">
+                        <p class="text-sm font-serif italic text-navy">"Compliance não é custo, é investimento em segurança e reputação institucional."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pilares (Cards) -->
+    <section class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-serif font-bold text-navy mb-4">Os 3 Pilares do Método Ethica</h2>
+                <p class="text-slate-600">Nossa ementa foi estruturada para cobrir todas as frentes necessárias para uma gestão pública blindada e eficiente.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Card 1 -->
+                <div class="bg-white p-10 rounded-xl shadow-sm border border-slate-200 hover:shadow-xl hover:border-accent/20 transition-all group">
+                    <div class="w-16 h-16 bg-cream rounded-lg flex items-center justify-center mb-8 group-hover:bg-navy transition-colors">
+                        <i class="fa-solid fa-shield-check text-navy text-3xl group-hover:text-cream"></i>
+                    </div>
+                    <h4 class="text-xl font-serif font-bold text-navy mb-4">Compliance</h4>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Implementação de programas de integridade baseados em leis nacionais e diretrizes internacionais da ISO.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-10 rounded-xl shadow-sm border border-slate-200 hover:shadow-xl hover:border-accent/20 transition-all group">
+                    <div class="w-16 h-16 bg-cream rounded-lg flex items-center justify-center mb-8 group-hover:bg-navy transition-colors">
+                        <i class="fa-solid fa-magnifying-glass-chart text-navy text-3xl group-hover:text-cream"></i>
+                    </div>
+                    <h4 class="text-xl font-serif font-bold text-navy mb-4">Gestão de Riscos</h4>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Mapeamento, análise e tratamento de vulnerabilidades específicas da administração pública brasileira.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-10 rounded-xl shadow-sm border border-slate-200 hover:shadow-xl hover:border-accent/20 transition-all group">
+                    <div class="w-16 h-16 bg-cream rounded-lg flex items-center justify-center mb-8 group-hover:bg-navy transition-colors">
+                        <i class="fa-solid fa-users-gear text-navy text-3xl group-hover:text-cream"></i>
+                    </div>
+                    <h4 class="text-xl font-serif font-bold text-navy mb-4">Governança</h4>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Estratégia, controle e transparência ativa para elevar o nível institucional do seu órgão ou setor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O Mentor -->
+    <section id="mentor" class="py-24 bg-navy text-cream overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2 flex justify-center order-2 md:order-1">
+                    <div class="relative">
+                        <div class="w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-accent p-2">
+                            <img src="http://googleusercontent.com/image_collection/image_retrieval/17461993300539163996" alt="Dr. Eduardo Jansen" class="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-700">
+                        </div>
+                        <!-- Badge -->
+                        <div class="absolute top-0 right-0 bg-accent text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-tighter">
+                            Especialista Referência
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2">
+                    <h2 class="text-accent font-bold uppercase tracking-widest text-sm mb-4">Conheça o Mentor</h2>
+                    <h3 class="text-4xl font-serif font-bold mb-8">Dr. Eduardo Jansen</h3>
+                    <p class="text-cream/80 mb-6 leading-relaxed text-lg">
+                        Advogado, consultor e acadêmico, o Dr. Eduardo Jansen dedicou sua carreira a entender as nuances do direito administrativo e a necessidade de uma gestão ética.
+                    </p>
+                    <p class="text-cream/80 mb-10 leading-relaxed">
+                        Ele consolidou anos de prática em auditorias e consultorias governamentais em um curso acessível, direto e focado em resultados reais para o setor público. Sua missão é elevar o padrão ético das instituições através do conhecimento compartilhado.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-accent hover:text-white transition-colors text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-accent hover:text-white transition-colors text-2xl"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodologia EAD -->
+    <section id="ead" class="py-24 bg-cream">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-3xl p-8 md:p-16 shadow-2xl flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Educação Digital com Excelência Acadêmica</h2>
+                    <p class="text-slate-600 mb-8">Nossa plataforma EAD não é apenas um repositório de vídeos. É um ecossistema de aprendizado projetado para profissionais ocupados.</p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-4">
+                            <div class="bg-accent/10 p-2 rounded-lg"><i class="fa-solid fa-play text-accent"></i></div>
+                            <div>
+                                <h5 class="font-bold text-navy">Videoaulas On-Demand</h5>
+                                <p class="text-sm text-slate-500">Assista quando puder, de qualquer dispositivo.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="bg-accent/10 p-2 rounded-lg"><i class="fa-solid fa-file-pdf text-accent"></i></div>
+                            <div>
+                                <h5 class="font-bold text-navy">Materiais de Apoio</h5>
+                                <p class="text-sm text-slate-500">Check-lists, modelos de atas e minutas para uso imediato.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="bg-accent/10 p-2 rounded-lg"><i class="fa-solid fa-certificate text-accent"></i></div>
+                            <div>
+                                <h5 class="font-bold text-navy">Certificação Profissional</h5>
+                                <p class="text-sm text-slate-500">Atestado de competência técnica para sua carreira.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2 bg-slate-100 p-4 rounded-2xl shadow-inner border border-slate-200">
+                    <!-- Mockup do Vídeo -->
+                    <div class="aspect-video bg-navy rounded-xl flex items-center justify-center relative group overflow-hidden cursor-pointer shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=2070" class="absolute inset-0 w-full h-full object-cover opacity-40">
+                        <div class="bg-accent w-20 h-20 rounded-full flex items-center justify-center text-white text-3xl z-10 group-hover:scale-110 transition-transform shadow-xl">
+                            <i class="fa-solid fa-play ml-2"></i>
+                        </div>
+                        <span class="absolute bottom-4 left-4 text-white font-bold text-sm tracking-wide z-10">VER DEMONSTRAÇÃO DA PLATAFORMA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final / Footer -->
+    <footer id="contato" class="bg-navy text-white pt-24 pb-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row justify-between gap-16 mb-20">
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-serif font-bold mb-6">Pronto para liderar com ética?</h2>
+                    <p class="text-cream/70 mb-8 text-lg">As vagas para a nova turma estão abertas por tempo limitado. Garanta seu acesso ao método definitivo de Compliance Público.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-accent hover:bg-white hover:text-navy px-10 py-5 rounded font-bold transition-all text-xl shadow-lg">
+                            QUERO GARANTIR MINHA VAGA
+                        </button>
+                    </div>
+                    <div class="mt-12 flex items-center space-x-4 text-cream/50">
+                        <i class="fa-solid fa-lock"></i>
+                        <span class="text-xs uppercase tracking-widest">Pagamento Seguro & Acesso Imediato</span>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/3 bg-white/5 p-8 rounded-2xl border border-white/10">
+                    <h4 class="font-bold mb-6 flex items-center"><i class="fa-solid fa-envelope mr-3 text-accent"></i> Fale Conosco</h4>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Seu Nome" class="w-full bg-white/10 border border-white/20 p-4 rounded focus:border-accent outline-none">
+                        <input type="email" placeholder="Seu E-mail" class="w-full bg-white/10 border border-white/20 p-4 rounded focus:border-accent outline-none">
+                        <textarea placeholder="Sua Mensagem ou Dúvida" class="w-full bg-white/10 border border-white/20 p-4 rounded h-32 focus:border-accent outline-none"></textarea>
+                        <button class="w-full bg-white text-navy font-bold py-4 rounded hover:bg-accent hover:text-white transition-all">ENVIAR MENSAGEM</button>
+                    </form>
+                </div>
+            </div>
+            
+            <hr class="border-white/10 mb-12">
+            
+            <div class="flex flex-col md:flex-row justify-between items-center text-cream/40 text-sm">
+                <div class="mb-4 md:mb-0">
+                    &copy; 2024 Ethica Compliance. Todos os direitos reservados.
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-accent">Termos de Uso</a>
+                    <a href="#" class="hover:text-accent">Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
